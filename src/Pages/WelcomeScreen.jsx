@@ -16,7 +16,7 @@ const TypewriterEffect = ({ text }) => {
       } else {
         clearInterval(timer);
       }
-    }, 260);
+    }, 200);
     
     return () => clearInterval(timer);
   }, [text]);
@@ -149,7 +149,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                 className="text-center"
                 variants={childVariants}
                 data-aos="fade-up"
-                data-aos-delay="1200"
+                data-aos-delay="1000"
               >
                 <a
                   href="https://ahmadfadli.vercel.app/"
